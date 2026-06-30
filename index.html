@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IAPROD · Produzione video AI &amp; Infrastrutture IA on-premise in Sardegna</title>
+  <meta name="description"
+    content="IAPROD unisce produzione audiovisiva assistita da Intelligenza Artificiale (IAPROD) e noleggio di server e workstation IA on-premise (IABOX) per aziende e studi professionali in Sardegna. Dati sicuri, conformità GDPR, qualità cinematografica." />
+  <meta name="author" content="Alessio Cocco — IAPROD" />
+  <meta name="theme-color" content="#070710" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:title" content="IAPROD — Video AI &amp; Infrastrutture IA sovrane in Sardegna" />
+  <meta property="og:description"
+    content="Produzione video generativa e server IA on-premise per imprese e studi professionali. Qualità cinematografica, dati che non lasciano mai la tua azienda." />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- JSON-LD: local business -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "IAPROD",
+  "description": "Produzione video con Intelligenza Artificiale e infrastrutture IA on-premise (IABOX) per imprese e studi professionali in Sardegna.",
+  "founder": { "@type": "Person", "name": "Alessio Cocco" },
+  "email": "alessio.cocco1995@gmail.com",
+  "telephone": "+39 348 463 6082",
+  "areaServed": "Sardegna, Italia",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Oristano",
+    "addressRegion": "OR",
+    "addressCountry": "IT"
+  }
+}
+</script>
+</head>
+
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="wrap nav__inner">
+      <a href="#home" class="logo" aria-label="IAPROD home">IA<span>PROD</span></a>
+      <nav class="nav__links" aria-label="Navigazione principale">
+        <a href="#iaprod">Video</a>
+        <a href="#lavori">Lavori</a>
+        <a href="#iabox">IABOX</a>
+        <a href="#studio">Studio</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+      <a href="#contatti" class="btn btn--ghost nav__cta">Parliamo<span class="arr">→</span></a>
+      <button class="nav__burger" id="burger" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <video id="heroVideo" autoplay muted loop playsinline preload="auto"></video>
+      <div class="hero__veil"></div>
+      <div class="hero__grid"></div>
+    </div>
+    <div class="wrap hero__content">
+      <span class="eyebrow reveal">Hub creativo &amp; tecnologico · Sardegna</span>
+      <h1 class="reveal">
+        Diamo forma all'<span class="grad">intelligenza</span><br />
+        che racconta e protegge il tuo business.
+      </h1>
+      <p class="hero__lead reveal">
+        Due anime, una sola regia. <strong>IAPROD</strong> produce video di qualità cinematografica con
+        l'AI generativa. <strong>IABOX</strong> installa server e workstation IA <em>on-premise</em>:
+        la potenza dei modelli linguistici dentro la tua azienda, senza che un dato esca mai.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#lavori" class="btn btn--primary">Guarda i lavori</a>
+        <a href="#iabox" class="btn btn--outline">Soluzioni IA on-premise</a>
+      </div>
+      <div class="hero__stats reveal">
+        <div><b>−50%</b><span>tempi di produzione</span></div>
+        <div><b>100%</b><span>dati in azienda</span></div>
+        <div><b>0€</b><span>costi API cloud ricorrenti</span></div>
+      </div>
+    </div>
+    <a href="#divisioni" class="hero__scroll" aria-label="Scorri">↓</a>
+  </section>
+
+  <!-- ===== DIVISIONI ===== -->
+  <section class="divisioni section" id="divisioni">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="kicker">Cosa facciamo</span>
+        <h2>Una realtà, due divisioni complementari.</h2>
+        <p class="section__sub">
+          L'unico studio in Sardegna che crea il contenuto <em>e</em> fornisce l'infrastruttura IA
+          isolata su cui farlo girare. Chi acquista video scopre quanto può essere sicura l'IA in
+          azienda — e viceversa.
+        </p>
+      </div>
+      <div class="split">
+        <a href="#iaprod" class="split__card split__card--media reveal">
+          <span class="split__tag">Divisione Media</span>
+          <h3>IA<span class="accent-m">PROD</span></h3>
+          <p>Spot, video aziendali, clip artistiche e contenuti social generati con AI e rifiniti a mano in DaVinci
+            Resolve. Standard cinematografico, tempi ridotti.</p>
+          <span class="split__go">Scopri la produzione video →</span>
+        </a>
+        <a href="#iabox" class="split__card split__card--tech reveal">
+          <span class="split__tag">Divisione Tech</span>
+          <h3>IA<span class="accent-t">BOX</span></h3>
+          <p>Workstation e server pre-configurati con Docker e WebUI per eseguire LLM open-source in locale. Data
+            sovereignty totale, conformità GDPR, zero abbonamenti cloud.</p>
+          <span class="split__go">Scopri l'infrastruttura IA →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== IAPROD ===== -->
+  <section class="section section--media" id="iaprod">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="kicker kicker--m">IAPROD · Divisione Media</span>
+        <h2>Video che sembrano girati con il budget di un grande brand.</h2>
+        <p class="section__sub">
+          L'AI accelera ideazione, generazione degli asset e montaggio preliminare. La direzione
+          artistica, il ritmo e la rifinitura restano umani. Il risultato: produzioni d'impatto,
+          accessibili anche alle piccole realtà locali.
+        </p>
+      </div>
+
+      <div class="cards4">
+        <article class="svc reveal">
+          <span class="svc__num">01</span>
+          <h3>Promo &amp; Aziendali</h3>
+          <p>Spot brevi e video corporate per PMI e professionisti, pensati per web e canali digitali.</p>
+        </article>
+        <article class="svc reveal">
+          <span class="svc__num">02</span>
+          <h3>Artistici &amp; Musicali</h3>
+          <p>Videoclip per artisti e creator, con scenari immersivi e stili visivi unici generati via AI.</p>
+        </article>
+        <article class="svc reveal">
+          <span class="svc__num">03</span>
+          <h3>Istituzionali &amp; Turistici</h3>
+          <p>Contenuti per enti e associazioni per promuovere il territorio e l'identità sarda.</p>
+        </article>
+        <article class="svc reveal">
+          <span class="svc__num">04</span>
+          <h3>Social &amp; Reels</h3>
+          <p>Verticali dinamici per Reels, TikTok e Shorts, con adattamento automatico dei formati.</p>
+        </article>
+      </div>
+
+      <!-- workflow -->
+      <div class="flow">
+        <h3 class="flow__title reveal">Come nasce un video</h3>
+        <ol class="flow__steps">
+          <li class="reveal"><span>Pre-produzione</span>
+            <p>Brief, script e storyboard accelerati con Gemini e Claude.</p>
+          </li>
+          <li class="reveal"><span>Produzione AI</span>
+            <p>Sequenze e ambientazioni generate con Runway e Kling.</p>
+          </li>
+          <li class="reveal"><span>Post umana</span>
+            <p>Ritmo, color, sound design e grafiche in DaVinci Resolve.</p>
+          </li>
+          <li class="reveal"><span>Distribuzione</span>
+            <p>Export ottimizzati per YouTube, social media e siti web aziendali.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LAVORI ===== -->
+  <section class="section section--work" id="lavori">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="kicker kicker--m">Portfolio</span>
+        <h2>Lavori reali, non rendering di prova.</h2>
+        <p class="section__sub">Clicca un progetto per riprodurlo. Filtra per tipologia.</p>
+      </div>
+
+      <div class="filters reveal" id="filters">
+        <button class="filter is-active" data-filter="all">Tutti</button>
+        <button class="filter" data-filter="promo">Brand &amp; Promo</button>
+        <button class="filter" data-filter="arte">Artistici</button>
+        <button class="filter" data-filter="territorio">Territorio</button>
+        <button class="filter" data-filter="sport">Sport &amp; Adventure</button>
+      </div>
+
+      <div class="grid-work" id="workGrid"><!-- popolato via JS --></div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING MEDIA ===== -->
+  <section class="section section--price" id="prezzi-media">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="kicker kicker--m">Tariffe video · indicative</span>
+        <h2>Trasparenza prima del preventivo.</h2>
+      </div>
+      <div class="cards3">
+        <article class="price reveal">
+          <h3>Video promozionale</h3>
+          <p class="price__val">da €196 <small>solo produzione</small></p>
+          <p class="price__hint">Pacchetto completo (ideazione + asset AI + montaggio + ottimizzazione social):
+            <b>€336–616</b>.</p>
+          <ul>
+            <li>30s – 1 min</li>
+            <li>Formati multipiattaforma</li>
+            <li>Color &amp; sound base</li>
+          </ul>
+        </article>
+        <article class="price price--feat reveal">
+          <span class="price__badge">Premium</span>
+          <h3>Spot / Videoclip</h3>
+          <p class="price__val">€1.800–3.000</p>
+          <p class="price__hint">Produzioni ad alta complessità con generazione AI avanzata.</p>
+          <ul>
+            <li>Sound design dedicato</li>
+            <li>Color grading DaVinci Studio</li>
+            <li>Scenografie generative</li>
+          </ul>
+        </article>
+        <article class="price reveal">
+          <h3>Abbonamento Social</h3>
+          <p class="price__val">da €354 <small>/mese</small></p>
+          <p class="price__hint">Comunicazione sempre fresca, senza pensieri.</p>
+          <ul>
+            <li>2 video al mese</li>
+            <li>Formati Reels / TikTok / Shorts</li>
+            <li>Priorità in produzione</li>
+          </ul>
+        </article>
+      </div>
+      <p class="price__foot reveal">Prezzi IVA inclusa, indicativi. Ogni progetto riceve un preventivo su misura.</p>
+    </div>
+  </section>
+
+  <!-- ===== IABOX ===== -->
+  <section class="section section--tech" id="iabox">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="kicker kicker--t">IABOX · Divisione Tech</span>
+        <h2>L'Intelligenza Artificiale dentro la tua azienda. <span class="grad-t">Letteralmente.</span></h2>
+        <p class="section__sub">
+          Niente cloud, niente API esterne. Installiamo server e workstation pre-configurati che
+          eseguono modelli linguistici open-source <em>in locale</em>. I tuoi documenti sensibili
+          non lasciano mai la rete aziendale.
+        </p>
+      </div>
+
+      <figure class="iabox-video reveal">
+        <video src="video/iabox.mp4" autoplay muted loop playsinline controls preload="metadata"
+          aria-label="Presentazione IABOX"></video>
+      </figure>
+
+      <div class="tech-grid">
+        <div class="tech-feat reveal">
+          <h3>Perché on-premise</h3>
+          <ul class="ticks">
+            <li><b>Data sovereignty assoluta.</b> I dati restano tra le mura dell'impresa, mai usati per addestrare
+              modelli di terzi.</li>
+            <li><b>Conformità nativa GDPR e AI Act.</b> Rete isolata, zero trasferimenti oltre i confini aziendali.</li>
+            <li><b>Costi prevedibili.</b> Canone HaaS fisso, addio tariffe a consumo delle API cloud.</li>
+            <li><b>Aggiornabile in minuti.</b> Container Docker: nuovi modelli LLM senza toccare l'hardware.</li>
+          </ul>
+        </div>
+        <aside class="percy reveal">
+          <span class="percy__tag">Hardware d'élite</span>
+          <h4>Workstation “Percy”</h4>
+          <p>Intel Core 9 285K ottimizzata per AI e calcolo parallelo. Zero colli di bottiglia per inferenza e
+            rendering.</p>
+          <div class="percy__spec">
+            <div><b>5–30</b><span>utenti per server</span></div>
+            <div><b>Docker</b><span>+ WebUI on-premise</span></div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="cards3 cards3--tech">
+        <article class="tplan reveal">
+          <h3>Entry Level</h3>
+          <p>Workstation Edge AI per il professionista singolo: inferenza e rendering IA in autonomia, sulla scrivania.
+          </p>
+          <span class="tplan__price">da €190 <small>/mese</small></span>
+          <span class="tplan__scale">Scala fino a <b>€30/mese</b> al 3° anno</span>
+        </article>
+        <article class="tplan reveal">
+          <h3>Mid Level</h3>
+          <p>Workstation ad alte prestazioni per carichi creativi e modelli più esigenti, con maggiore potenza di
+            calcolo.</p>
+          <span class="tplan__price">da €336 <small>/mese</small></span>
+          <span class="tplan__scale">Scala fino a <b>€119/mese</b> al 3° anno</span>
+        </article>
+        <article class="tplan tplan--feat reveal">
+          <span class="tplan__badge">Per studi &amp; team</span>
+          <h3>Server On-Premise multi-utente</h3>
+          <p>Assistente IA privato per studi legali, notarili, medici e PMI: gruppi di lavoro da 5 a 30 utenti. Setup
+            Docker, WebUI, sicurezza e manutenzione inclusi.</p>
+          <span class="tplan__price">da €690 <small>/mese</small></span>
+          <span class="tplan__scale">Scala fino a <b>€359/mese</b> al 3° anno</span>
+        </article>
+      </div>
+
+      <p class="tplan__note reveal">
+        <b>Canone decrescente.</b> Più resti, meno paghi: la tariffa si rimodula anno dopo anno
+        sullo stesso asset, premiando la fedeltà. Setup, WebUI, antivirus, firewall e aggiornamento
+        dei modelli LLM sempre inclusi.
+      </p>
+
+      <div class="usecases reveal">
+        <span>Ideale per:</span>
+        Studi legali · Commercialisti · Notai · Centri medici · Consulenti finanziari · PMI manifatturiere con segreti
+        industriali
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PERCHÉ NOI ===== -->
+  <section class="section section--why" id="perche">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="kicker">Perché IAPROD</span>
+        <h2>Radicati in Sardegna, costruiti sull'ingegneria.</h2>
+      </div>
+      <div class="cards4 cards4--why">
+        <article class="why reveal">
+          <h3>First mover</h3>
+          <p>Unici sul territorio a unire produzione video generativa e infrastruttura IA on-premise.</p>
+        </article>
+        <article class="why reveal">
+          <h3>Etica &amp; trasparenza</h3>
+          <p>Contenuti AI dichiarati, rispetto del copyright, supervisione umana su ogni output.</p>
+        </article>
+        <article class="why reveal">
+          <h3>Sostenibilità</h3>
+          <p>Workflow dematerializzati e hardware efficiente per Watt: meno sprechi, meno e-waste.</p>
+        </article>
+        <article class="why reveal">
+          <h3>Assistenza locale</h3>
+          <p>Presenza diretta a Oristano e Cagliari: interventi tempestivi, personalizzazione reale.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STUDIO / CHI SONO ===== -->
+  <section class="section section--studio" id="studio">
+    <div class="wrap studio">
+      <div class="studio__text reveal">
+        <span class="kicker">Lo studio</span>
+        <h2>Alessio Cocco</h2>
+        <p class="studio__role">Titolare · Lead System Engineer · Direzione creativa</p>
+        <p>
+          Un profilo raro: il rigore dell'ingegneria informatica unito alla sensibilità della
+          direzione creativa. Dalla scrittura del codice alla configurazione dei server fisici,
+          fino al montaggio video e alla distribuzione — un solo interlocutore per l'intero ciclo.
+        </p>
+        <ul class="studio__edu">
+          <li><b>Diploma ITS (Tecnico Superiore)</b> — sviluppo software, gestione di reti e sistemi complessi,
+            ottimizzazione dei processi digitali.</li>
+          <li><b>Ingegneria Informatica</b> — architetture dei calcolatori, virtualizzazione e logica dei modelli IA
+            <em>(prossimo alla laurea)</em>.</li>
+          <li><b>AI &amp; DevOps</b> — Docker, deployment di LLM open-source, calcolo parallelo su GPU (Edge AI).</li>
+        </ul>
+      </div>
+      <div class="studio__skills reveal">
+        <div class="skill"><span>Architetture IT &amp; DevOps</span><i style="--v:95%"></i></div>
+        <div class="skill"><span>Deployment LLM on-premise</span><i style="--v:92%"></i></div>
+        <div class="skill"><span>Produzione video &amp; AI generativa</span><i style="--v:90%"></i></div>
+        <div class="skill"><span>Post-produzione (DaVinci Resolve)</span><i style="--v:88%"></i></div>
+        <div class="skill"><span>Cybersecurity &amp; GDPR</span><i style="--v:85%"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATTI ===== -->
+  <section class="section section--contact" id="contatti">
+    <div class="wrap contact">
+      <div class="contact__intro reveal">
+        <span class="kicker">Contatti</span>
+        <h2>Parliamo del tuo progetto.</h2>
+        <p>Che sia un video da girare o un'infrastruttura IA da mettere in sicurezza, rispondo di persona — di solito
+          entro poche ore.</p>
+        <p class="contact__loc">📍 Oristano (OR) · Cagliari — Sardegna</p>
+      </div>
+      <div class="contact__actions reveal">
+        <a href="mailto:alessio.cocco1995@gmail.com" class="cbtn">
+          <span class="cbtn__ic">✉</span>
+          <span><b>Email</b><small>alessio.cocco1995@gmail.com</small></span>
+        </a>
+        <a href="https://wa.me/393484636082" class="cbtn cbtn--wa" target="_blank" rel="noopener">
+          <span class="cbtn__ic">⌬</span>
+          <span><b>WhatsApp</b><small>Scrivimi ora</small></span>
+        </a>
+        <a href="tel:+393484636082" class="cbtn">
+          <span class="cbtn__ic">☎</span>
+          <span><b>Telefono</b><small>+39 348 463 6082</small></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>
+        <a href="#home" class="logo logo--sm">IA<span>PROD</span></a>
+        <p class="footer__tag">Video AI &amp; Infrastrutture IA on-premise · Sardegna</p>
+      </div>
+      <div class="footer__meta">
+        <p>Alessio Cocco — Ditta individuale</p>
+        <p>Oristano (OR) · Cagliari</p>
+        <p class="footer__pi">QUESTO SITO È SOLO UN PROTOTIPO DA NON INTEDERSI COME VERA OFFERTA COMMERCIALE</p>
+      </div>
+      <div class="footer__copy">
+        <p>© <span id="year"></span> IAPROD &amp; IABOX</p>
+        <p class="muted">Realizzato con supervisione umana. Contenuti AI sempre dichiarati.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== LIGHTBOX ===== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lbClose" aria-label="Chiudi">✕</button>
+    <div class="lightbox__stage">
+      <video id="lbVideo" controls playsinline></video>
+      <p class="lightbox__cap" id="lbCap"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
